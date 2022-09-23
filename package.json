@@ -10,7 +10,8 @@
     "astro",
     "astro-component",
     "a11y",
-    "accessibility"
+    "accessibility",
+    "emoji"
   ],
   "author": "Sean McPherson <sean@seanmcp.com> (https://github.com/seanmcp)",
   "repository": "https://github.com/seanmcp/astro-emoji",
