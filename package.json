@@ -1,0 +1,19 @@
+{
+  "name": "astro-emoji",
+  "version": "1.0.0",
+  "description": "An accessible emoji component for Astro applications",
+  "main": "src/Emoji.astro",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "astro",
+    "astro-component",
+    "a11y",
+    "accessibility"
+  ],
+  "author": "Sean McPherson <sean@seanmcp.com> (https://github.com/seanmcp)",
+  "repository": "https://github.com/seanmcp/astro-emoji",
+  "homepage": "https://github.com/seanmcp/astro-emoji#readme",
+  "license": "MIT"
+}

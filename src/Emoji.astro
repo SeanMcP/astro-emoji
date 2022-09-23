@@ -1,0 +1,7 @@
+---
+const { label = null, symbol, ...rest } = Astro.props;
+---
+
+<span aria-hidden={label ? null : true} aria-label={label} role="img" {...rest}>
+  {symbol}
+</span>
