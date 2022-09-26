@@ -24,7 +24,7 @@ yarn add astro-emoji
 
 Import the default `Emoji` from `astro-emoji` and add it to your code:
 
-```md
+```jsx
 ---
 import Emoji from 'astro-emoji':
 ---
@@ -46,7 +46,7 @@ The resulting markup for that component signature will be:
 
 `Emoji`s with no `label` prop are rendered with `aria-hidden="true"`:
 
-```jsx
+```html
 <Emoji symbol="🤐" />
 <span aria-hidden="true" role="img">🤐</span>
 ```
