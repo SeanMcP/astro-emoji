@@ -11,7 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - "emoji" to keywords in `package.json`
 - `Props` type export
-- Simple test setup, test for Props
+- Unit tests with `astro-component-tester`
+- Simple Prop type tests with `astro check`
 
 ## [1.0.0] - 2020-01-06
 
