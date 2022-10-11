@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2022-10-11
+
 ### Added
 
 - "emoji" to keywords in `package.json`
@@ -14,6 +16,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Unit tests with `astro-component-tester`
 - Simple Prop type tests with `astro check`
 
-## [1.0.0] - 2020-01-06
+## [1.0.0] - 2022-09-23
 
 - Initial release of `astro-emoji` 🎉
