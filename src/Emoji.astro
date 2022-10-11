@@ -1,4 +1,8 @@
 ---
+export interface Props {
+  label?: string;
+  symbol: string;
+}
 const { label = null, symbol, ...rest } = Astro.props;
 ---
 
