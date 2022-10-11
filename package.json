@@ -4,7 +4,7 @@
   "description": "An accessible emoji component for Astro applications",
   "main": "src/Emoji.astro",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "astro check"
   },
   "keywords": [
     "astro",
@@ -13,8 +13,14 @@
     "accessibility",
     "emoji"
   ],
+  "files": [
+    "src/Emoji.astro"
+  ],
   "author": "Sean McPherson <sean@seanmcp.com> (https://github.com/seanmcp)",
   "repository": "https://github.com/seanmcp/astro-emoji",
   "homepage": "https://github.com/seanmcp/astro-emoji#readme",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "astro": "^1.4.7"
+  }
 }

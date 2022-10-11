@@ -1,0 +1,5 @@
+node_modules/
+
+# npm pack
+package/
+*.tgz
