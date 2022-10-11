@@ -7,7 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Add "emoji" to keywords in `package.json`
+### Added
+
+- "emoji" to keywords in `package.json`
+- `Props` type export
 
 ## [1.0.0] - 2020-01-06
 
