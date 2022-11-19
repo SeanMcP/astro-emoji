@@ -1,9 +1,24 @@
 ---
-export interface Props {
+import { HTMLAttributes } from "astro/types";
+
+type Attributes = Omit<
+  HTMLAttributes<"span">,
+  "aria-hidden" | "aria-label" | "role"
+>;
+
+export interface Props extends Attributes {
   label?: string;
   symbol: string;
 }
+
 const { label = null, symbol, ...rest } = Astro.props;
+const forbiddenAttributes = ["aria-hidden", "aria-label", "role"];
+
+forbiddenAttributes.forEach((attr) => {
+  if (rest.hasOwnProperty(attr)) {
+    throw new Error(`The \`${attr}\` attribute is handled internally`);
+  }
+});
 ---
 
 <span aria-hidden={label ? null : true} aria-label={label} role="img" {...rest}>
