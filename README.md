@@ -56,7 +56,7 @@ The `Emoji` component consumes two props: `symbol` and `label`. Every other prop
 
 ### Forbidden properties
 
-The following properties are managed internally, and will throw an error if passes as props to `Emoji`:
+The following properties are managed internally, and therefore ignored if passes as props to `Emoji`:
 
 - `aria-hidden`
 - `aria-label`

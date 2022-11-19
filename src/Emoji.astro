@@ -16,7 +16,10 @@ const forbiddenAttributes = ["aria-hidden", "aria-label", "role"];
 
 forbiddenAttributes.forEach((attr) => {
   if (rest.hasOwnProperty(attr)) {
-    throw new Error(`The \`${attr}\` attribute is handled internally`);
+    console.warn(
+      `\`Emoji\` handles the \`${attr}\` attribute internally. Ignoring passed value \`${rest[attr]}\``
+    );
+    delete rest[attr];
   }
 });
 ---

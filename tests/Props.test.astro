@@ -1,12 +1,15 @@
 ---
-import Emoji from '../src/Emoji.astro'
+import Emoji from "../src/Emoji.astro";
 ---
 
-<!-- Pass --><Emoji symbol="🧪" />
-<!-- Pass --><Emoji label="Science!" symbol="🧪" />
+<!-- Pass -->
+<Emoji symbol="🧪" />
 
-<!-- Fail --><Emoji />
-<!-- Fail --><Emoji label="Blank" />
-<!-- Fail --><Emoji symbol="🧪" aria-label="anything" />
-<!-- Fail --><Emoji symbol="🧪" aria-hidden="anything" />
-<!-- Fail --><Emoji symbol="🧪" role="anything" />
+<!-- Pass -->
+<Emoji label="Science!" symbol="🧪" />
+
+<!-- Fail: Property 'symbol' is missing -->
+<Emoji />
+
+<!-- Fail: Property 'symbol' is missing -->
+<Emoji label="Blank" />

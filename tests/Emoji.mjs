@@ -41,4 +41,36 @@ test("When label and symbol are provided, renders labelled emoji", async () => {
   assert.not.match(html, "aria-hidden");
 });
 
+test("Forwards props to attributes", async () => {
+  const label = "Test tube";
+  const symbol = "🧪";
+  const html = await getHTML({
+    label,
+    symbol,
+    class: "test",
+    id: "test",
+    "data-test": "test",
+  });
+
+  assert.match(html, 'class="test"');
+  assert.match(html, 'id="test"');
+  assert.match(html, 'data-test="test"');
+});
+
+test("Ignores forbidden attributes", async () => {
+  const label = "Test tube";
+  const symbol = "🧪";
+  const html = await getHTML({
+    label,
+    symbol,
+    "aria-hidden": "test",
+    "aria-label": "test",
+    role: "test",
+  });
+
+  assert.not.match(html, 'aria-hidden="test"');
+  assert.not.match(html, 'aria-label="test"');
+  assert.not.match(html, 'role="test"');
+});
+
 test.run();
