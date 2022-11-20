@@ -7,8 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Add improved prop types
-- Add "withastro" keyword
+## [1.2.0] - 2022-11-19
+
+- Added improved prop types
+- Added "withastro" keyword
 
 ## [1.1.0] - 2022-10-11
 
