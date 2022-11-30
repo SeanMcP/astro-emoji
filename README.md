@@ -24,7 +24,7 @@ Import the default `Emoji` from `astro-emoji` and add it to your code:
 
 ```astro
 ---
-import Emoji from 'astro-emoji':
+import Emoji from 'astro-emoji';
 ---
 
 <footer>
